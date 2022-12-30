@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    <h1>DT Random Name Fetcher</h1>
+    <div class="container">
+    <div class="box">
+        <h1 id="name"></h1>
+    </div>
+    </div>
+    <div class="btn-div">
+    <button onclick="ReqFromApi()" class="btn">get Random Name</button>
+    </div>
+    <div class="center-div">
+    <form action="http:localhost:5294/addName" method="POST">
+        <input type="text" placeholder="Enter Name" name="name">
+        <button type="submit" class="btn">Add Name</button>
+    </form>
+    </div>
+    <!-- get names array from backend and display it -->
+    <div class="center-div">
+        <button onclick="getAllNames()" class="btn">Fetch all Names Present at Backend</button>
+        <ul id="ul">
+    
+        </ul>
+    </div>
+    <div class="center-div">
+        <input type="number" placeholder="Enter index" name="index" id="index-input">
+        <button onclick="fetchByIndex()" class="btn">Fetch by index</button>
+    </div>
+    <script src="./home.js">
+    </script>
+</body>
+</html>

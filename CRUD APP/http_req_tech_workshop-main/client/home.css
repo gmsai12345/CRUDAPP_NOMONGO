@@ -1,0 +1,42 @@
+
+body{
+    background-color:darkgray;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+  }
+  .box{
+    width: 500px;
+    height: 250px;
+    outline: solid 1px black;
+    background-color:whitesmoke;
+    border: 1px solid black;
+  }
+.btn{
+    background-color:black;
+    padding: 10px;
+    color: aliceblue;
+    margin-top: 20px;
+}
+.btn-div{
+    text-align: center;
+}
+h1{
+    text-align:center;
+    text-decoration: underline;
+}
+
+#name{
+    text-align: center;
+    margin-top: 20%;
+    text-decoration: none;
+    color: blue;
+}
+.center-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
